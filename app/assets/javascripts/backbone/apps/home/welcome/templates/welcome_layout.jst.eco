@@ -1,0 +1,19 @@
+<div class="rbp-breadcrumb container-fluid" id="breadcrumb-region"></div>
+
+<div class="container">
+    <div id="sidebar-region" class="col-sm-1 col-md-2"></div>
+    <div id="content-block" class="col-sm-11 col-md-10">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Silence is golden</h3>
+            </div>
+            <div class="panel-body">
+                Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML
+                and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on
+                the
+                <code>.container</code>
+                <i class="glyphicon glyphicon-thumbs-up"></i>
+            </div>
+        </div>
+    </div>
+</div>

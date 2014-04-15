@@ -1,0 +1,7 @@
+<div id="page-details">
+    <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><th>Title</th><td><%= @title %></td></tr>
+          </tbody>
+    </table>
+</div>

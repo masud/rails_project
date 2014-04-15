@@ -1,0 +1,11 @@
+- content_for :title do t("welcome") end
+
+#wrap
+  %a.sr-only{:href => "#content"} Skip navigation
+  %header#header-region{:role => "banner"}
+
+  #main-region.rbp-app-container.container-fluid
+
+%footer#footer-region.rbp-footer.navbar-fixed-bottom{:role => "contentinfo"}
+
+= render 'layouts/scripts'

@@ -1,0 +1,20 @@
+!!!
+%html{:lang => I18n.locale.to_s, :dir => (rtl?) ? 'rtl' : 'ltr'}
+  %head
+    %title rails4bp
+    = stylesheet_link_tag :application
+  %body
+    %a.sr-only{:href => "#content"} Skip navigation
+
+    %header#header-region.navbar.navbar-inverse.navbar-fixed-top.rbp-app-nav{:role => "banner"}
+      = render 'layouts/nav'
+
+    #main-region.container-fluid
+      = yield
+
+    %footer#footer-region.rbp-footer
+      = render 'shared/footer'
+
+    = javascript_include_tag "jquery"
+    = javascript_include_tag "jquery_ujs"
+    = javascript_include_tag "bootstrap/dist/js/bootstrap"

@@ -1,0 +1,21 @@
+- content_for :title do t("devise.sessions.new.sign_in") end
+
+.container
+  .content
+    = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => 'form-signin', :role => 'form', 'autocomplete' => 'off'}) do |f|
+      %h1 Sign in
+      = f.error_notification
+
+      .login-fields
+        %p Sign in using your registered account:
+        .field= f.input :email, :required => true, :autofocus => true, :class => 'username-field', :placeholder => 'Email'
+        .field= f.input :password, :required => true, :class => 'password-field', :placeholder => 'Password'
+
+      .login-actions
+        %div.login-checkbox
+          = f.input :remember_me, :as => :boolean, :wrapper_html => {:class => 'checkbox'}, :label => false, :inline_label => 'Yes, remember me' if devise_mapping.rememberable?
+        %div.login-buttons= f.button :submit, "Sign in", :class => 'btn btn-primary'
+
+
+
+  = render "devise/shared/links"
